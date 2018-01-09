@@ -29,7 +29,7 @@ def validate_inputs():
     if password != verify_password:
         verify_error = 'Does not match password above'
         verify_password = ''
-    if email != "" and len(email) < 3 or len(email) > 20:
+    if email != "" and (len(email) < 3 or len(email) > 20):
         email_error = 'Not a valid email'
         email = ''
     if email != "" and (email.count("@") !=1 or email.count(".") !=1):
