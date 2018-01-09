@@ -32,9 +32,6 @@ def validate_inputs():
     if email != "" and len(email) < 3 or len(email) > 20:
         email_error = 'Not a valid email'
         email = ''
-    if email != "" and ("." not in email or "@" not in email):
-        email_error = 'Not a valid email'
-        email = ''
     if email != "" and (email.count("@") !=1 or email.count(".") !=1):
         email_error = 'Not a valid email'
         email = '' 
